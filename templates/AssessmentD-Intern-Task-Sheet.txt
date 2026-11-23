@@ -1,0 +1,102 @@
+========================================================================
+TECH FOUNDATIONS -- PERFORMANCE ASSESSMENT D (WEEK 12)
+INTERN TASK SHEET
+========================================================================
+Two tasks: 1) Risk Register   2) Release Plan
+
+
+WHY THIS MATTERS
+------------------------------------------------------------------------
+This is your chance to show what you can do on your own. It's a
+checkpoint, not a trick. Both tasks mirror real tech-team work: naming
+the risks to a delivery, and writing a disciplined plan to ship and
+operate a system. Do your best, stay calm, and show your process.
+
+
+GROUND RULES
+------------------------------------------------------------------------
+- Work individually. No AI tools, no conversation, no Teams chat.
+- You may ask about directions, not about how to solve a task.
+- Commit your work to [repo/folder] and push when you finish a task.
+
+
+WHAT YOU'LL PRODUCE
+------------------------------------------------------------------------
+- Task 1: a completed risk register in your repo + linked issue(s)
+- Task 2: ops/release_plan.md and ops/incident_log.md
+- A short reflection (3 questions) submitted with your artifacts
+
+
+========================================================================
+TASK 1 -- RISK REGISTER
+========================================================================
+"List at least three risks that could affect your Sprint 2 demo. For
+each, provide a mitigation strategy and an owner."
+
+Use the risk_register.md template. Columns:
+  Risk | Probability | Impact | Mitigation | Owner
+
+Aim for this:
+  - 3 or more specific, realistic risks (not "something might break").
+  - Each risk has a concrete mitigation and a named owner.
+  - Open a backlog issue for each risk and link it.
+
+You're done when:
+  - risk_register.md is filled in and committed, and each risk links
+    to an issue in your repo.
+
+
+========================================================================
+TASK 2 -- RELEASE PLAN
+========================================================================
+System context: a simple system -- [API] + [DB] + [UI].
+
+"Write a release plan for deploying this system. Include pre-flight
+checks, step-by-step release, rollback steps, and monitoring signals
+(health checks, error rate, latency). Add who does what during
+incidents and how to escalate."
+
+Use the release_plan.md and incident_log.md templates in ops/.
+
+Aim for this:
+  - A clear pre-flight checklist.
+  - Ordered, numbered release steps.
+  - A SPECIFIC rollback trigger (what makes you roll back) + the steps.
+  - Monitoring signals with real numbers: health check, error-rate
+    threshold, latency target.
+  - Who does what during an incident, and how to escalate.
+
+You're done when:
+  - ops/release_plan.md covers preflight, steps, rollback, monitoring,
+    and roles/escalation, and ops/incident_log.md has a template or
+    one example entry.
+
+
+ALWAYS-ON HABITS (we look for these in your repo)
+------------------------------------------------------------------------
+  - Commits: scaffold -> feature -> refactor, with meaningful
+    messages.
+  - README first: a short top-level README (what's here, how to run,
+    known issues).
+  - Issues: open/close issues that map to your risks; link them to
+    PRs.
+  - Logging: timestamp | level | message in any script you run.
+  - Secrets: use .env + .gitignore; never commit keys or credentials.
+
+
+REFLECTION (required, not graded -- submit with your work)
+------------------------------------------------------------------------
+  - What worked?
+  - What could I improve next time?
+  - What professional habit will I keep practicing?
+
+
+TEMPLATES IN YOUR FOLDER
+------------------------------------------------------------------------
+  - risk_register.md
+  - ops/release_plan.md
+  - ops/incident_log.md
+
+========================================================================
+END -- INTERN TASK SHEET
+========================================================================
